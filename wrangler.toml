@@ -11,7 +11,7 @@ database_id = "9b3e0d40-8078-44be-a97c-eeda93d5b3f0"
 # KV namespace for session storage (optional)
 [[kv_namespaces]]
 binding = "SESSIONS"
-id = "df5ca1583e2645328dda4d28cab3fcca"
+id = "79b979cece0d402fa5d38c26163cf73f"
 preview_id = "your-preview-kv-namespace-id-here"
 
 [vars]
