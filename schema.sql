@@ -3,15 +3,15 @@ CREATE TABLE IF NOT EXISTS diary_entries (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
     content TEXT NOT NULL,
-    content_type TEXT DEFAULT 'markdown', -- markdown, plain
-    mood TEXT DEFAULT 'neutral', -- happy, sad, neutral, excited, anxious, peaceful
-    weather TEXT DEFAULT 'unknown', -- sunny, cloudy, rainy, snowy
-    images TEXT DEFAULT '[]', -- JSON array of image URLs
-    location TEXT DEFAULT NULL, -- JSON object with location info: {name, latitude, longitude, address}
+    content_type TEXT DEFAULT 'markdown', 
+    mood TEXT DEFAULT 'neutral',
+    weather TEXT DEFAULT 'unknown',
+    images TEXT DEFAULT '[]', 
+    location TEXT DEFAULT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    tags TEXT DEFAULT '[]', -- JSON array of tags
-    hidden INTEGER DEFAULT 0 -- 0 = visible, 1 = hidden (admin only)
+    tags TEXT DEFAULT '[]', 
+    hidden INTEGER DEFAULT 0 
 );
 
 -- 应用设置表
